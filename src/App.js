@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { IndexRouter } from './router'
+import  MyHeader from './components/header'
+import  MyFooter from './components/footer'
+import { Layout, Affix } from 'antd';
+
+const { Header, Footer, Content } = Layout;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout className='page'>
+      <Affix offsetTop={0}>
+        <Header>
+          <MyHeader />
+        </Header>
+      </Affix>
+      <Content className='wrap content'>
+        <IndexRouter />
+      </Content>
+      <Footer  className='my-footer'>
+        <MyFooter />
+      </Footer>
+    </Layout>
   );
 }
 

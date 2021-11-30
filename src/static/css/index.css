@@ -1,0 +1,132 @@
+@import "~normalize.css";
+
+/* < 576px */
+.wrap{
+  background-color: #fff;
+  padding: 0 5px;
+}
+
+/* >= 576px */
+@media all and (min-width: 576px) {
+  .wrap{
+    padding: 0 10px;
+  }
+  .wrap .topics_list{
+    background: #fff;
+    padding: 0 10px !important;
+  }
+}
+
+/* >= 768px */
+@media all and (min-width: 768px) {
+  .wrap{
+    padding: 0 15px;
+  }
+  .wrap .topics_list{
+    background: #fff;
+    padding: 0 15px !important;
+  }
+}
+
+/* >= 992px */
+@media all and (min-width: 992px) {
+  .wrap{
+    padding: 0 20px;
+  }
+  .wrap .topics_list{
+    background: #fff;
+    padding: 0 25px !important;
+  }
+}
+
+/* >= 1200px */
+@media all and (min-width: 1200px) {
+  .wrap{
+    width:980px;
+    margin: 0 auto;
+  }
+  .wrap .topics_list{
+    background: #fff;
+    padding: 0 30px !important;
+  }
+}
+
+/* >= 1600px */
+@media all and (min-width: 1500px) {
+  .wrap{
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .wrap .topics_list{
+    background: #fff;
+    padding: 0 30px !important;
+  }
+}
+
+img{
+  width: 100%;
+}
+
+#root .page{
+  height: auto;
+}
+
+.content{
+  height: auto;
+}
+
+.page::-webkit-scrollbar {
+  position: relative;
+  overflow-y: scroll;
+  display: none; /* Chrome Safari */
+}
+
+.wrap .topics_list{
+  padding: 0 15px !important;
+}
+
+#logo{
+  margin-top: 0;
+  text-align: center;
+}
+
+/* .my-footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  text-align: center;
+} */
+
+.fromNow{
+  text-align: left;
+}
+
+.pagination{
+  border-top: 1px solid #f0f0f0;
+  padding: 10px 5px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.topicsTab{
+  display: flex;
+}
+
+.comment{
+  margin-top: 30px;
+}
+
+.user-card{
+  margin-top: 20px;
+}
+
+.user-top-info{
+  text-align: center;
+}
+
+.user{
+  margin: 20px 0;
+}
